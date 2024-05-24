@@ -53,9 +53,17 @@ const FormularioRestaurante = () => {
   };
 
   return (
-    <div id='restaurantes' className="bg-black min-h-screen text-white py-8 px-4">
+    <div id='restaurantes' className="bg-black min-h-screen text-white py-8 px-4 flex justify-center items-center">
       <div className="container mx-auto px-4 py-8 bg-gray-800 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold mb-8 flex items-center">
+        <div className="flex justify-between items-center mb-8">
+          <button
+            onClick={() => navigate('/lista')}
+            className="bg-transparent text-blue-500 py-2 px-4 rounded-md hover:text-blue-600 transition duration-300"
+          >
+            SU LISTA DE PEDIDOS
+          </button>
+        </div>
+        <h1 className="text-3xl font-bold mb-8 flex items-center justify-center">
           <FaUtensils className="mr-3" />
           {id ? 'Editar Restaurante' : 'Crear Pedido'}
         </h1>
@@ -109,9 +117,6 @@ const FormularioRestaurante = () => {
           </div>
           <button type="submit" className="mt-6 bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300">
             {id ? 'Actualizar' : 'Guardar'}
-          </button>
-          <button type="button" onClick={() => navigate('/lista')} className="mt-6 bg-gray-500 text-white py-2 px-6 rounded-md hover:bg-gray-600 transition duration-300 ml-4">
-               SU LISTA DE PEDIDOS 
           </button>
         </form>
       </div>
