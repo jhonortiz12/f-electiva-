@@ -1,3 +1,5 @@
+import axios from 'axios'; // Importa Axios aquí
+
 const baseURL = process.env.NODE_ENV === 'production' ? 
                 import.meta.env.VITE_BACKEND_URL : 'https://electiva-b.azurewebsites.net/';
 
@@ -6,7 +8,6 @@ console.log(`API URL: ${baseURL}/api/restaurante/api_backen/`);
 const api = axios.create({
   baseURL: `${baseURL}/api/restaurante/api_backen/`,
 });
-
 
 export const getAllRestaurantes = () => api.get('/');
 export const getRestaurante = (id) => api.get(`/${id}`);
