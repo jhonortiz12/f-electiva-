@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const baseURL = process.env.NODE_ENV === 'production' ? 
-                import.meta.env.VITE_BACKEND_URL : 'https://electiva-b.azurewebsites.net';
+                import.meta.env.VITE_BACKEND_URL : 'https://electiva-b.azurewebsites.net/';
 
 console.log(`API URL: ${baseURL}/api/restaurante/api_backen/`);
 
