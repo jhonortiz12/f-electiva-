@@ -3,10 +3,10 @@ import axios from 'axios';
 const baseURL = process.env.NODE_ENV === 'production' ? 
                 import.meta.env.VITE_BACKEND_URL : 'http://localhost:8000';
 
-console.log(`API URL: ${baseURL}/api/restaurante/api_restauran/`);
+console.log(`API URL: ${baseURL}/api/restaurante/api_backen/`);
 
 const api = axios.create({
-  baseURL: `${baseURL}/api/restaurante/api_restauran/`,
+  baseURL: `${baseURL}/api/restaurante/api_backen/`,
 });
 
 export const getAllRestaurantes = () => api.get('/');
