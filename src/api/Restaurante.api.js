@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-// Definir baseURL según el entorno
-const baseURL = process.env.NODE_ENV === 'production' 
-  ? 'https://electiva-b.azurewebsites.net' 
-  : 'http://127.0.0.1:8000'; // URL de desarrollo
+const backendURL = 'https://electiva-b.azurewebsites.net/';
 
-console.log(`API URL: ${baseURL}/api/restaurante/api_backen/`);
 
+
+console.log(API URL: ${backendURL}api/restaurante/api_backen/);
+
+// Crea una instancia de Axios con la URL base configurada
 const api = axios.create({
-  baseURL: `${baseURL}/api/restaurante/api_backen/`,
+  baseURL: ${backendURL}api/restaurante/api_backen/,
 });
 
 export const getAllRestaurantes = () => api.get('/');
