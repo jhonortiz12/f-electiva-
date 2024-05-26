@@ -2,11 +2,11 @@ import axios from 'axios';
 
 const backendURL = 'https://electiva-b.azurewebsites.net/';
 
-console.log(`API URL: ${backendURL}/api/restaurante/api_backen/`);
+console.log(`API URL: ${backendURL}api/restaurante/api/restaurante/`);
 
 // Crea una instancia de Axios con la URL base configurada
 const api = axios.create({
-  baseURL: `${backendURL}/api/restaurante/api_backen/`,
+  baseURL: `${backendURL}api/restaurante/api/restaurante/`,
 });
 
 export const getAllRestaurantes = () => api.get('/');
