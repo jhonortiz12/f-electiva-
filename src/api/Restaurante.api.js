@@ -1,4 +1,4 @@
-import axios from 'axios'; // Importa Axios aquí
+import axios from 'axios'; 
 
 const baseURL = process.env.NODE_ENV === 'production' ? 
                 import.meta.env.VITE_BACKEND_URL : 'https://electiva-b.azurewebsites.net/';
