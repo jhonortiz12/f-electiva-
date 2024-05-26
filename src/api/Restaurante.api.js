@@ -1,11 +1,9 @@
 import axios from 'axios';
 
-const baseURL = process.env.NODE_ENV === 'production' ? 
-                import.meta.env.VITE_BACKEND_URL : 'https://electiva-b.azurewebsites.net';
-
-if (!baseURL) {
-    throw new Error("Base URL is not defined. Please check your environment variables.");
-}
+// Definir baseURL según el entorno
+const baseURL = process.env.NODE_ENV === 'production' 
+  ? 'https://your-production-backend-url.com' 
+  : 'http://127.0.0.1:8000'; // URL de desarrollo
 
 console.log(`API URL: ${baseURL}/api/restaurante/api_backen/`);
 
