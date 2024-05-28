@@ -45,9 +45,7 @@ const ListaRestaurantes = () => {
                 <p>{restaurante.entrega ? 'Entrega Disponible' : 'Sin Entrega'}</p>
               </div>
               <div className="flex items-center">
-                <button onClick={() => handleEdit(restaurante.id)} className="text-blue-500 mr-4 flex items-center">
-                  <FaEdit className="mr-1" /> Editar
-                </button>
+
                 <button onClick={() => handleDelete(restaurante.id)} className="text-red-500 flex items-center">
                   <FaTrashAlt className="mr-1" /> Eliminar
                 </button>
