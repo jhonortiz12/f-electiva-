@@ -30,9 +30,9 @@ const ListaRestaurantes = () => {
   };
 
   return (
-    <div className="bg-black min-h-screen text-white py-8 px-4">
-      <div className="container mx-auto px-4 py-8 bg-gray-800 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold mb-8">Lista de Pedidos</h1>
+    <div className="bg-white min-h-screen text-white py-8 px-4">
+      <div className="container mx-auto px-4 py-8 bg-black rounded-lg shadow-lg">
+        <h1 className="text-3xl font-bold mb-8">Lista de Sus Pedidos</h1>
         
         <ul>
           {restaurantes.map(restaurante => (
@@ -56,7 +56,7 @@ const ListaRestaurantes = () => {
           ))}
         </ul>
         <button onClick={() => navigate('/')} className="mt-6 bg-gray-500 text-white py-2 px-6 rounded-md hover:bg-gray-600 transition duration-300 flex items-center">
-          <FaArrowLeft className="mr-2" /> Volver al Formulario
+          <FaArrowLeft className="mr-2" /> Ir a inicio
         </button>
       </div>
     </div>
