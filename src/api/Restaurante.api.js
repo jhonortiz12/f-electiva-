@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const backendURL = 'http://127.0.0.1:8000/';
+const backendURL = 'https://b-electiva.azurewebsites.net/';
 
 console.log(`API URL: ${backendURL}api/restaurante/api/restaurante/`);
 
